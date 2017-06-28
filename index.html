@@ -3,13 +3,14 @@
 <title>Cheer</title>
 </head>
 <body>
-<p id="fortune"></p>
+<p id="fortune" style="align:center"></p>
 <script>
 var fortune = [
   'Fight crime!',
   '1-2-3 Yee-Haw!'
   ];
-document.getElementById('fortune').innerHTML = fortune[0];
+var i = Math.floor(Math.random() * fortune.length);
+document.getElementById('fortune').innerHTML = fortune[i];
 </script>
 </body>
 </html>
